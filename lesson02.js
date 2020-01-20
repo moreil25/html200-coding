@@ -14,10 +14,18 @@ let totalPrice = price + (price * donateRate);
 totalPrice.toFixed(2);
 console.log("Total:", totalPrice);
 
-
+//why is the pop up alert happening before the other console.log elements?
 if ('payFee') {
   alert(x);
 }
+
+let result = "goob doggo";
+let i = 0;
+do {
+i = i + 1;
+result = result + i;
+} while (i < 5);
+console.log(result);
 
 /*assuming the 404 error is happening on GitHub Pages because I have no HTML*/
 
