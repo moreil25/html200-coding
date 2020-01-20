@@ -1,15 +1,25 @@
-console.log('hi');
-
-let x = 'woof woof';
-let y = 'pet me';
-
-if (30 / 3 === 11) {
+var x = 'woof woof';
+var y = 'pet me';
+if ( 15 / 5 === 5) {
   console.log(x);
   } else if (x === 'pet me') {
     console.log(y);
-  } else if (y === 'woof woof') {
+  } else if (y === 'pet me') {
     console.log('treats');
   }
+
+const price = 123.45;    // Price of adoption
+const donateRate = 0.101; // 10.1% donation instead of sales tax
+let totalPrice = price + (price * donateRate);
+totalPrice.toFixed(2);
+console.log("Total:", totalPrice);
+
+
+if ('payFee') {
+  alert(x);
+}
+
+
 
 
 /*This Regular Challenge homework is required.
