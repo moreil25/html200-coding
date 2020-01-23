@@ -1,31 +1,7 @@
-let x = 'woof woof';
-let y = 'pet me';
-if ( 15 / 5 === 5) {
-  console.log(x);
-  } else if (x === 'pet me') {
-    console.log(y);
-  } else if (y === 'pet me') {
-    console.log('treats');
-  }
-
-const price = 123.45;    // Price of adoption
-const donateRate = 0.101; // 10.1% donation instead of sales tax
-let totalPrice = price + (price * donateRate);
-totalPrice.toFixed(2);
-console.log("Total:", totalPrice);
-
-//why is the pop up alert happening before the other console.log elements?if ('payFee') {
-  alert(x);
-}
-
-let result = "goob doggo";
-let i = 0;
-do {
-i = i + 1;
-result = result + i;
-} while (i < 5);
-console.log(result);
-
+let var1 =
+let var2 =
+let var3 =
+let var4 =
 
 
 /*For this assignment, you don't need to build a web page that contains a calculator where the user can press buttons and such. Instead, you just have to make a Javascript program that can be called from the Javascript console and used to perform basic calculator functions, like add/subtract/multiply/divide. Of course, Javascript itself should be able to perform the heavy lifting of the math calculations, so you just have to call the built-in functions accordingly. Does that make sense?*/
