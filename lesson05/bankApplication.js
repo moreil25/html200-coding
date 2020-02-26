@@ -6,15 +6,18 @@
   //else check if user wants to deposit
   //else check if user wants to withdrawal
   //else check if user wants balance
+  //break;
 
 //W to withdrawal. The user will be prompted again to enter an amount to withdraw. After withdrawing money, they should be able to type another option.
 
-//let withdrawal = 0;
+let myBalance = 250;
 
-//function myWithdrawal (remove) {
-  //withdrawal -= remove;
-  //prompt('Enter withdrawal amount', 'Continue');
-//}
+let withdrawal = 0;
+let arr = ['$20', '$40', '$60', '$100'];
+function myWithdrawal (remove) {
+  withdrawal -= remove;
+  prompt('Enter withdrawal amount', 'Continue');
+}
 
 //D to deposit. The user will be prompted again to enter an amount to deposit. After depositing money, they should be able to type another option.
 
@@ -25,17 +28,18 @@
 
 //B to balance. The user will see their balance. Afterwards, they should be able to type another option.
 
-let balance = 0;
 
-function checkBalance (balance) {
+function checkBalance() {
+  let total = 300;
   let notification;
-  if (balance < '$300') {
+  if (myBalance < 300) {
     notification = "Low balance";
   } else {
     notification = "Exit application";
   }
-  alert(balance);
+  alert(notification);
 }
+
 
 //The program will loop asking for input until the user enters Q.
 
