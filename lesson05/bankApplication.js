@@ -12,11 +12,9 @@
 
 let myBalance = 250;
 
-let withdrawal = 0;
-let arr = ['$20', '$40', '$60', '$100'];
-function myWithdrawal (remove) {
-  withdrawal -= remove;
-  prompt('Enter withdrawal amount', 'Continue');
+function makeWithdrawal () {
+  let notification;
+  prompt('Enter withdrawal amount');
 }
 
 //D to deposit. The user will be prompted again to enter an amount to deposit. After depositing money, they should be able to type another option.
@@ -27,7 +25,6 @@ function myWithdrawal (remove) {
 
 
 //B to balance. The user will see their balance. Afterwards, they should be able to type another option.
-
 
 function checkBalance() {
   let total = 300;
