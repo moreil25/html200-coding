@@ -10,25 +10,27 @@
 
 //W to withdrawal. The user will be prompted again to enter an amount to withdraw. After withdrawing money, they should be able to type another option.
 
-let myBalance = 250;
+let x = 20;
+let myBalance = 300;
+let total = 0;
 
-function makeWithdrawal () {
-  let notification;
-  prompt('Enter withdrawal amount');
+function makeWithdrawal() {
+  total = (myBalance - x);
+  alert(total);
 }
+prompt('You made a withdrawal');
+
 
 //D to deposit. The user will be prompted again to enter an amount to deposit. After depositing money, they should be able to type another option.
 
-//let deposit;
-//function () {
+//function makeDeposit(myDeposit) {
+  //myBalance + myDeposit;
   //prompt('Enter deposit amount');
 
 
 //B to balance. The user will see their balance. Afterwards, they should be able to type another option.
 
 function checkBalance() {
-  let total = 300;
-  let notification;
   if (myBalance < 300) {
     notification = "Low balance";
   } else {
@@ -36,18 +38,25 @@ function checkBalance() {
   }
   alert(notification);
 }
+//DO I NEED TO USE AN ARRAY HERE? TO STORE AND ACCESS DATA? MULTI-DIMENSIONAL ARRAY?
 
 
 //The program will loop asking for input until the user enters Q.
 
-//for (let i = 0; i < 3; i++) {
-  //alert('Finished banking');
-
+//for (let i = 0; i < 4; i++) {
+  //alert(SOMETHING/OUTER LOOP);
+  //for (let j = 0; j < 3; j++);
+    //alert(SOMETHING/INNER LOOP);
+  //}
 
 
 //Extra challenges: The additional requirements below are optional. Implement them if you finish the Regular Challenge 1 (above) and are up for more!
 
   //The user should not be able to make excessive withdrawals (no negative balances).
+  //do {
+    //alert ();
+    //myBalance++;
+    //} while (myBalance >= 0)
   //The user should have a deposit cap of $50,000.
   //The user should receive a warning to protect against low balances.
   //Create an alert if the user tries to withdraw an amount that would leave them with less than $300 in their account, asking them to confirm if they're sure.
