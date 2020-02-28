@@ -15,6 +15,7 @@ let myBalance = 300;
 let total = 0;
 
 function makeWithdrawal() {
+  //How many and what variables do I need to pass to this function?
   total = (myBalance - x);
   alert(total);
 }
