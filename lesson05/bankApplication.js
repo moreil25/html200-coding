@@ -1,3 +1,4 @@
+//The program will loop asking for input until the user enters Q.
 //Q to quit (immediately quits the program)
 //let quit;
 //function quitApp () {
@@ -7,13 +8,26 @@
   //else check if user wants to withdrawal
   //else check if user wants balance
   //break;
+  //for (let i = 0; i < 4; i++) {
+    //alert(OUTER LOOP);
+    //for (let j = 0; j < 3; j++);
+      //alert(INNER LOOP);
+    //}
 
-//W to withdrawal. The user will be prompted again to enter an amount to withdraw. After withdrawing money, they should be able to type another option.
-
+// for (let i = 300; i < 305; i++) {
+//   console.log(i);
+//   if ( i === 303) break;
+// }
 let myBalance = 300;
+while (myBalance < 300) {
+  myBalance++;
+  if (myBalance === 303) continue;
+  alert('Low balance');
+} while (myBalance < 305);
+
 let total = 0;
 
-  //How many and what variables do I need to pass to this function?
+//How many and what variables do I need to pass to this function?
 function makeWithdrawal () {
   let input = prompt('How much would you like to withdrawal?');
   let result = 0;
@@ -22,8 +36,6 @@ function makeWithdrawal () {
 }
 
 
-//D to deposit. The user will be prompted again to enter an amount to deposit. After depositing money, they should be able to type another option.
-
 //function makeDeposit() {
   //let input = prompt('How much would you like to deposit?');
   //let result = 0;
@@ -31,27 +43,14 @@ function makeWithdrawal () {
   //alert(result);
 
 
-//B to balance. The user will see their balance. Afterwards, they should be able to type another option.
-
 function checkBalance() {
-  if (myBalance < 300) {
-    notification = "Low balance";
+  alert(myBalance);
+} if (myBalance < 300) {
+    alert(myBalance + ' ' + 'Low balance');
   } else if (myBalance >= 300) {
-    notification = "Exit application";
-  }
-  alert(notification);
+    prompt('Enter Q to exit application');
 }
-)
 //DO I NEED TO USE AN ARRAY HERE? TO STORE AND ACCESS DATA? MULTI-DIMENSIONAL ARRAY?  GUARD STATEMENT? SWITCH STATEMENT?
-
-
-//The program will loop asking for input until the user enters Q.
-
-//for (let i = 0; i < 4; i++) {
-  //alert(SOMETHING/OUTER LOOP);
-  //for (let j = 0; j < 3; j++);
-    //alert(SOMETHING/INNER LOOP);
-  //}
 
 
 //Extra challenges: The additional requirements below are optional. Implement them if you finish the Regular Challenge 1 (above) and are up for more!
