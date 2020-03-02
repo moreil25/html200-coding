@@ -24,8 +24,6 @@ for (myBalance < 300; myBalance < 305; myBalance++) {
   //alert('Low balance');
 }
 
-let total = 0;
-
 //How many and what variables do I need to pass to this function?
 function makeWithdrawal () {
   let input = prompt('How much would you like to withdrawal?');
@@ -43,7 +41,7 @@ function makeWithdrawal () {
 
 
 function checkBalance() {
-  alert(myBalance);
+  //alert(myBalance);
 } if (myBalance < 300) {
     alert(myBalance + ' ' + 'Low balance');
   } else if (myBalance >= 300) {
@@ -53,7 +51,6 @@ function checkBalance() {
 
 
 //Extra challenges: The additional requirements below are optional. Implement them if you finish the Regular Challenge 1 (above) and are up for more!
-
   //The user should not be able to make excessive withdrawals (no negative balances).
   //do {
     //alert ();
