@@ -10,23 +10,25 @@
 
 //W to withdrawal. The user will be prompted again to enter an amount to withdraw. After withdrawing money, they should be able to type another option.
 
-let x = 20;
-let myBalance = 300;
+let myBalance = 200;
 let total = 0;
 
-function makeWithdrawal() {
   //How many and what variables do I need to pass to this function?
-  total = (myBalance - x);
-  alert(total);
+function makeWithdrawal () {
+  let input = prompt('How much would you like to withdrawal?');
+  let result = 0;
+  result = myBalance - input;
+  alert(result);
 }
-prompt('You made a withdrawal');
 
 
 //D to deposit. The user will be prompted again to enter an amount to deposit. After depositing money, they should be able to type another option.
 
-//function makeDeposit(myDeposit) {
-  //myBalance + myDeposit;
-  //prompt('Enter deposit amount');
+//function makeDeposit() {
+  //let input = prompt('How much would you like to deposit?');
+  //let result = 0;
+  //result = myBalance + input;
+  //alert(result);
 
 
 //B to balance. The user will see their balance. Afterwards, they should be able to type another option.
