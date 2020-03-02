@@ -10,7 +10,7 @@
 
 //W to withdrawal. The user will be prompted again to enter an amount to withdraw. After withdrawing money, they should be able to type another option.
 
-let myBalance = 200;
+let myBalance = 300;
 let total = 0;
 
   //How many and what variables do I need to pass to this function?
@@ -36,12 +36,13 @@ function makeWithdrawal () {
 function checkBalance() {
   if (myBalance < 300) {
     notification = "Low balance";
-  } else {
+  } else if (myBalance >= 300) {
     notification = "Exit application";
   }
   alert(notification);
 }
-//DO I NEED TO USE AN ARRAY HERE? TO STORE AND ACCESS DATA? MULTI-DIMENSIONAL ARRAY?
+)
+//DO I NEED TO USE AN ARRAY HERE? TO STORE AND ACCESS DATA? MULTI-DIMENSIONAL ARRAY?  GUARD STATEMENT? SWITCH STATEMENT?
 
 
 //The program will loop asking for input until the user enters Q.
