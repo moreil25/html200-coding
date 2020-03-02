@@ -22,8 +22,8 @@ let myBalance = 300;
 while (myBalance < 300) {
   myBalance++;
   if (myBalance === 303) continue;
-  alert('Low balance');
-} while (myBalance < 305);
+  //alert('Low balance');
+}
 
 let total = 0;
 
@@ -36,11 +36,11 @@ function makeWithdrawal () {
 }
 
 
-//function makeDeposit() {
-  //let input = prompt('How much would you like to deposit?');
-  //let result = 0;
-  //result = myBalance + input;
-  //alert(result);
+// function makeDeposit() {
+//   let input = prompt('How much would you like to deposit?');
+//   let result = 0;
+//   result = myBalance + input;
+//   alert(result);
 
 
 function checkBalance() {
