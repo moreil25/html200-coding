@@ -19,9 +19,8 @@
 //   if ( i === 303) break;
 // }
 let myBalance = 300;
-while (myBalance < 300) {
-  myBalance++;
-  if (myBalance === 303) continue;
+for (myBalance < 300; myBalance < 305; myBalance++) {
+  if (myBalance === 303) break;
   //alert('Low balance');
 }
 
