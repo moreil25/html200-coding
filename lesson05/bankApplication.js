@@ -19,36 +19,40 @@
 //   if ( i === 303) break;
 // }
 let myBalance = 300;
-for (myBalance < 300; myBalance < 305; myBalance++) {
-  if (myBalance === 303) break;
+// for (myBalance < 300; myBalance < 305; myBalance++) {
+//   if (myBalance === 303) break;
   //alert('Low balance');
+//}
+function bankMode () {
+  makeWithdrawal();
+  makeDeposit();
+  checkBalance();
+  quitApp();
 }
 
-//How many and what variables do I need to pass to this function?
 function makeWithdrawal () {
   let input = prompt('How much would you like to withdrawal?');
   let result = 0;
-  result = myBalance - input;
+  result = myBalance - Number(input);
+  myBalance = result;
   alert(result);
 }
 
-
-// function makeDeposit() {
-//   let input = prompt('How much would you like to deposit?');
-//   let result = 0;
-//   result = myBalance + input;
-//   alert(result);
-
+function makeDeposit() {
+  let input = prompt('How much would you like to deposit?');
+  let result = 0;
+  result = myBalance + Number(input);
+  myBalance = result;
+  alert(result);
+}
 
 function checkBalance() {
-  //alert(myBalance);
-} if (myBalance < 300) {
-    alert(myBalance + ' ' + 'Low balance');
-  } else if (myBalance >= 300) {
-    prompt('Enter Q to exit application');
+  alert(myBalance);
+// } if (myBalance < 300) {
+//     alert(myBalance + ' ' + 'Low balance');
+//   } else if (myBalance >= 300) {
+//     prompt('Enter Q to exit application');
 }
-//DO I NEED TO USE AN ARRAY HERE? TO STORE AND ACCESS DATA? MULTI-DIMENSIONAL ARRAY?  GUARD STATEMENT? SWITCH STATEMENT?
-
 
 //Extra challenges: The additional requirements below are optional. Implement them if you finish the Regular Challenge 1 (above) and are up for more!
   //The user should not be able to make excessive withdrawals (no negative balances).
