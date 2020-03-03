@@ -23,14 +23,15 @@ let myBalance = 300;
 //   if (myBalance === 303) break;
   //alert('Low balance');
 //}
-function bankMode () {
-  makeWithdrawal();
-  makeDeposit();
-  checkBalance();
-  quitApp();
+
+let bankMode = launchApp;
+
+function launchApp() {
+  let input = prompt('Please select from the following options: \n W \n D \n B \n Q');
+  alert(input);
 }
 
-function makeWithdrawal () {
+function makeWithdrawal() {
   let input = prompt('How much would you like to withdrawal?');
   let result = 0;
   result = myBalance - Number(input);
@@ -56,10 +57,6 @@ function checkBalance() {
 
 //Extra challenges: The additional requirements below are optional. Implement them if you finish the Regular Challenge 1 (above) and are up for more!
   //The user should not be able to make excessive withdrawals (no negative balances).
-  //do {
-    //alert ();
-    //myBalance++;
-    //} while (myBalance >= 0)
   //The user should have a deposit cap of $50,000.
   //The user should receive a warning to protect against low balances.
   //Create an alert if the user tries to withdraw an amount that would leave them with less than $300 in their account, asking them to confirm if they're sure.
