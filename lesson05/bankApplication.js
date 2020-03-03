@@ -24,11 +24,12 @@ let myBalance = 300;
   //alert('Low balance');
 //}
 
-let bankMode = launchApp;
+const bankMode = prompt('Please select from the following options: \n W \n D \n B \n Q');
+
+//Ask for input using a dialog box, then display input in a dialog box
 
 function launchApp() {
-  let input = prompt('Please select from the following options: \n W \n D \n B \n Q');
-  alert(input);
+  alert(bankMode);
 }
 
 function makeWithdrawal() {
