@@ -1,28 +1,17 @@
-  //for (let i = 0; i < 4; i++) {
-    //alert(OUTER LOOP);
-    //for (let j = 0; j < 3; j++);
-      //alert(INNER LOOP);
-    //}
-
 let myBalance = 300;
-// if (myBalance < 300) {
-//   alert('Low balance');
-// }
 
-const bankMode = 0;
 
-//Ask for input using a dialog box, then display input in a dialog box
-//The launchApp should loop around all the other fucntions within the app
+//Ask for input using a dialog box, then display input in a dialog box -- trying to figure out how/where this comes into play (last slide of Lesson 5), Jeremy mentioned it during office hours
 
 function launchApp() {
-  prompt('Please select from the following options: \n W \n D \n B \n Q');
-  if ('W') {
-    prompt(makeWithdrawal);
-  } else if ('D') {
-    prompt(makeDeposit);
-  } else if ('B') {
-    alert(myBalance);
-  // } else if ('Q'); {
+  let bankMode = prompt('Please select from the following options: \n W \n D \n B \n Q');
+  if (bankMode == 'W') {
+    makeWithdrawal();
+  } else if (bankMode == 'D') {
+    makeDeposit();
+  } else if (bankMode == 'B') {
+    myBalance();
+  // } if (bankMode === 'Q') {
   //   break;
   }
 }
@@ -45,10 +34,6 @@ function makeDeposit() {
 
 function checkBalance() {
   alert(myBalance);
-// } if (myBalance < 300) {
-//     alert(myBalance + ' ' + 'Low balance');
-//   } else if (myBalance >= 300) {
-//     prompt('Enter Q to exit application');
 }
 
 //Extra challenges: The additional requirements below are optional. Implement them if you finish the Regular Challenge 1 (above) and are up for more!
