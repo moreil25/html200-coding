@@ -1,35 +1,30 @@
-//The program will loop asking for input until the user enters Q.
-//Q to quit (immediately quits the program)
-//let quit;
-//function quitApp () {
-  //alert('Finished banking');
-  //check if user is ready to quit
-  //else check if user wants to deposit
-  //else check if user wants to withdrawal
-  //else check if user wants balance
-  //break;
   //for (let i = 0; i < 4; i++) {
     //alert(OUTER LOOP);
     //for (let j = 0; j < 3; j++);
       //alert(INNER LOOP);
     //}
 
-// for (let i = 300; i < 305; i++) {
-//   console.log(i);
-//   if ( i === 303) break;
-// }
 let myBalance = 300;
-// for (myBalance < 300; myBalance < 305; myBalance++) {
-//   if (myBalance === 303) break;
-  //alert('Low balance');
-//}
+// if (myBalance < 300) {
+//   alert('Low balance');
+// }
 
-const bankMode = prompt('Please select from the following options: \n W \n D \n B \n Q');
+const bankMode = 0;
 
 //Ask for input using a dialog box, then display input in a dialog box
+//The launchApp should loop around all the other fucntions within the app
 
 function launchApp() {
-  alert(bankMode);
+  prompt('Please select from the following options: \n W \n D \n B \n Q');
+  if ('W') {
+    prompt(makeWithdrawal);
+  } else if ('D') {
+    prompt(makeDeposit);
+  } else if ('B') {
+    alert(myBalance);
+  // } else if ('Q'); {
+  //   break;
+  }
 }
 
 function makeWithdrawal() {
