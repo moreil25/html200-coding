@@ -1,7 +1,8 @@
-let myBalance = 300;
+let myBalance = 400;
 
-function launchApp() {
-  let bankMode = prompt('Please select from the following options: \n W \n D \n B \n Q');
+
+while (function launchApp() {
+  let bankMode = prompt('Please enter one of the following options: \n W to Withdrawal \n D to Deposit \n B to Balance  \n Q to Quit');
   firstInput = bankMode;
   if (firstInput == 'W') {
     makeWithdrawal();
@@ -10,6 +11,8 @@ function launchApp() {
   } else if (firstInput == 'B') {
     checkBalance();
   }
+}) {
+do (//SOMETHING TO BREAK THE LOOP AND QUIT)
 }
 
 function makeWithdrawal() {
@@ -18,6 +21,7 @@ function makeWithdrawal() {
   result = myBalance - Number(input);
   myBalance = result;
   alert('Your balance is' + ' $' + result);
+  prompt(launchApp());
 }
 
 function makeDeposit() {
@@ -26,8 +30,10 @@ function makeDeposit() {
   result = myBalance + Number(input);
   myBalance = result;
   alert('Your balance is' + ' $' + result);
+  prompt(launchApp());
 }
 
 function checkBalance() {
   alert('Your balance is' + ' $' + myBalance);
+  prompt(launchApp());
 }
