@@ -1,6 +1,5 @@
 let myBalance = 400;
 
-
 function launchApp() {
   let bankMode = prompt('Please enter one of the following options: \n W to Withdrawal \n D to Deposit \n B to Balance  \n Q to Quit');
   firstInput = bankMode;
@@ -11,11 +10,6 @@ function launchApp() {
   } else if (firstInput == 'B') {
     checkBalance();
   }
-}
-
-while (launchApp++ < 5) {
-  if (firstInput == 'Q');
-  break;
 }
 
 function makeWithdrawal() {
