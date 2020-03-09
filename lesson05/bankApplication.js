@@ -13,8 +13,9 @@ function launchApp() {
     makeDeposit();
   } else if (firstInput == 'B') {
     checkBalance();
-  } else if (firstInput !== 'W', 'B', 'D', 'Q') {
+  } else () {
     alert('Incorrect option');
+    launchApp();
   }
 }
 
