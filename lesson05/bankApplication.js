@@ -3,7 +3,7 @@ let myBalance = 400;
 function launchApp() {
   let bankMode = prompt('Please enter one of the following options: \n W to Withdrawal \n D to Deposit \n B to Balance  \n Q to Quit');
   firstInput = bankMode;
-  while (firstInput == 'Q') {
+  if (firstInput == 'Q') {
     return;
   }
 
@@ -13,7 +13,7 @@ function launchApp() {
     makeDeposit();
   } else if (firstInput == 'B') {
     checkBalance();
-  } else () {
+  } else {
     alert('Incorrect option');
     launchApp();
   }
